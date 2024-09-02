@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="Logo.png" type="image/png">
+    <title>Zoven | Encrypt</title>
+</head>
+<body>
+    <header>
+        <img class="logo" src="Logo.png" alt="logo de la página">
+    </header>
+
+    <div id="toasts"></div>
+
+    <main>
+        <section class="input-container">
+            <textarea class="input-section" placeholder="Escribe tu mensaje aquí..."></textarea>
+            <div class="botones">
+                <button class="btn-crypt">Encriptar</button>
+                <button class="btn-descrypt">Desencriptar</button>
+            </div>
+        </section>
+
+        <section class="output-container">
+            <textarea class="output-section" id="outputText" readonly></textarea>
+            <div class="alert-container">
+                <h2>Ningún mensaje fue encontrado</h2>
+                <p>Ingresa el texto que quieras Encriptar o Desencriptar</p>
+            </div>
+            <button class="copiar">Copiar</button>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
